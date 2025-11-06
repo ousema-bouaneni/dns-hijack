@@ -48,7 +48,7 @@ $echo "ousema.com 1.2.3.4" >> /etc/hosts
 And machine3 was set up as machine1's DNS server using netplan conf files.
 
 ## The attack
-After getting the l2flood executable program into machine2 (for instance using `scp`), the effects of the attack can be illustrated by doing a DNS query before running `dns_hijack` on the attacker and afterwards (using `dig` or `nslookup` for instance), and observing the result.
+After getting the dns_hijack executable into machine2 (for instance using `scp`), the effects of the attack can be illustrated by doing a DNS query before running `dns_hijack` on the attacker and afterwards (using `dig` or `nslookup` for instance), and observing the result.
 ```console
 user@machine1:~$ dig @machine3 ousema.com
 
